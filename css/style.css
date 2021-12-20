@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* 共通部分 */
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "DotGothic16";
+    line-height: 1.7; 
+    color: #fff;
+    background-color: rgb(10, 10, 10);
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+.wrapper{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+/* 区切り線を入れたい！！！！ */
+.page-content{
+    border-top: solid 2px, #fff;
+}
+
+/* HEADER */
+.logo{
+    width: 320px;
+    margin-top: 14px;
+}
+.main-nav{
+    display: flex;
+    font-size: 0.8rem;
+    font-family: "Press Start 2P";
+    margin-top: 40px;
+    /* font-weight: bold; */
+    list-style: none;
+}
+.main-nav li{
+    margin: 16px;
+    padding: 4px;
+    width: 160px;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 10px;
+    text-align: center;
+}
+.main-nav a{
+    color: #fff;
+}
+.main-nav a:hover{
+    color: #bbb;
+}
+
+/* HOME */
+#home{
+    min-height: 100vh;
+}
+.big-bg{
+    background-size: cover;
+    background-position: center top;
+}
+.sub-title{
+    margin-top: 20%;
+}
+
+/* 見出し */
+.content-title1{
+    font-size: 1.2rem;
+    font-family: "Press Start 2P";
+    padding: 40px 40px 16px;
+    margin:0 16px;
+}
+/* 点滅 */
+.blink {
+    font-size: 1rem;
+	-webkit-animation: blink 2s steps(2, jump-none)t infinite normal;
+	animation: blink 2s steps(2, jump-none) infinite normal;
+}
+@-webkit-keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@keyframes blink {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+/* Service */
+#content1{
+    height: 100vh;
+}
+#content1 h5{
+    margin-top: 16px;
+    margin-left: 16px;
+}
+#content1 p{
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+/* Topics */
+#content2{
+    height: 50vh;
+}
+#content2 p{
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+/* Products */
+#content3{
+    height: 50vh;
+}
+#content3 p{
+    margin-top: 8px;
+    margin-left: 16px;
+}
+.mieru_font{
+    font-family: "Slackey";
+    font-size: 1.2rem;
+}
+.mieru{
+    height: 40px;
+}
+
+
+/* TOPに戻る */
+.return{
+    position: fixed;
+    right: 48px;
+    bottom: 80px;
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 20px;
+    border: solid 2px #fff;
+}
+.return a{
+    color: #fff;
+}
+.return a:hover{
+    color: #bbb;
+}
